@@ -36,6 +36,17 @@ latest = data.iloc[-1]
 signal = "HOLD"
 confidence = 50
 
+if pd.notna(latest["MA50"]) and pd.notna(latest["MA200"]):
+    if latest["MA50"] > latest["MA200"]:
+        signal = "BUY"
+        confidence = 75
+    elif latest["MA50"] < latest["MA200"]:
+        signal = "SELL"
+        confidence = 70
+
+signal = "HOLD"
+confidence = 50
+
 if latest["MA50"] > latest["MA200"]:
     signal = "BUY"
     confidence = 75
