@@ -5,3 +5,4 @@ numpy
 alpaca-trade-api
 ta
 plotly
+urllib3==2.2.1
