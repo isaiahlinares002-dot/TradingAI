@@ -13,7 +13,7 @@ stocks = ["AAPL", "TSLA", "MSFT", "NVDA", "AMZN", "GOOGL"]
 selected_stock = st.sidebar.selectbox("Choose a stock", stocks)
 
 # --- DOWNLOAD DATA
-data = yf.download(selected_stock, period="6mo", interval="1d")
+data = yf.download(selected_stock, period="2y", interval="1d")
 
 # --- CANDLESTICK CHART
 fig = go.Figure(data=[go.Candlestick(
