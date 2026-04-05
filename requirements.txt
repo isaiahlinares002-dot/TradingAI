@@ -1,8 +1,6 @@
 streamlit
 yfinance
 pandas
-numpy
-alpaca-trade-api
-ta
 plotly
-urllib3==2.2.1
+numpy
+scikit-learn
